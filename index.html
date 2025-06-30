@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dellicar - Sito in costruzione</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #58a6ff;
+      --bg-gradient: linear-gradient(135deg, #0d1117, #1f2937);
+      --text-light: #f0f6fc;
+      --text-muted: #9ba3af;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg-gradient);
+      color: var(--text-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      padding: 20px;
+      overflow: hidden;
+      animation: backgroundMove 10s infinite alternate ease-in-out;
+    }
+
+    @keyframes backgroundMove {
+      0% {
+        background-position: 0% 50%;
+      }
+      100% {
+        background-position: 100% 50%;
+      }
+    }
+
+    .container {
+      max-width: 600px;
+      padding: 30px;
+      border-radius: 15px;
+      background-color: rgba(255, 255, 255, 0.02);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: var(--primary);
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: var(--text-light);
+      margin-bottom: 30px;
+    }
+
+    .loader {
+      border: 6px solid #2f3e53;
+      border-top: 6px solid var(--primary);
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      margin: 0 auto 25px;
+      animation: spin 1.2s linear infinite;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    footer {
+      margin-top: 20px;
+      font-size: 0.9em;
+      color: var(--text-muted);
+    }
+
+    .madeby {
+      font-size: 0.85em;
+      color: #6b7280;
+      margin-top: 5px;
+    }
+
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Dellicar</h1>
+    <p>Il nostro sito è in costruzione.<br>Stiamo lavorando per offrirti qualcosa di straordinario.</p>
+    <div class="loader"></div>
+    <footer>
+      &copy; 2025 Dellicar. Tutti i diritti riservati.<br>
+      <div class="madeby">Made by Mediabring s.a.s</div>
+    </footer>
+  </div>
+</body>
+</html>
